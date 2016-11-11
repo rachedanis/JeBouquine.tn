@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="base.definition" template="/WEB-INF/layouts/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/baseFragments/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/baseFragments/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/baseFragments/footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/home.jsp" />
+	</definition>
+
+	<!-- login Page -->
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="login page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/login.jsp" />
+	</definition>
+
+	<!-- register1 Page -->
+	<definition name="register1" extends="base.definition">
+		<put-attribute name="title" value="infos personelles page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/register1.jsp" />
+	</definition>
+
+	<!-- register2 Page -->
+	<definition name="register2" extends="base.definition">
+		<put-attribute name="title" value="credentials page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/register2.jsp" />
+	</definition>
+	<!-- search key word Page -->
+	<definition name="searchKeyWord" extends="base.definition">
+		<put-attribute name="title" value="search by Key word page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/searchKeyWord.jsp" />
+	</definition>
+	
+		<!-- guidedResearch Page -->
+	<definition name="guidedResearch" extends="base.definition">
+		<put-attribute name="title" value="form guidedResearch page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/guidedResearch.jsp" />
+	</definition>
+		<!-- liste des livres recherches par critere Page -->
+	<definition name="listRechercheCritere" extends="base.definition">
+		<put-attribute name="title" value="liste ouvrage recherches page" />
+		<put-attribute name="body" value="/WEB-INF/bodyFragments/listeRechercheCritere.jsp" />
+	</definition>
+	<!-- ContactUs Page -->
+	<!-- <definition name="contactusPage" extends="base.definition"> -->
+	<!-- <put-attribute name="title" value="Contact Us" /> -->
+	<!-- <put-attribute name="body" value="/WEB-INF/bodyfragments/contactus.jsp" 
+		/> -->
+	<!-- </definition> -->
+
+
+
+</tiles-definitions> 
